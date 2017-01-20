@@ -1,0 +1,236 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+h2,
+.masthead p {
+  font: bold 28px "Bitter", serif;
+  letter-spacing: -0.5px; }
+
+.lg-nav {
+  display: none; }
+
+nav a {
+  font-size: 24px;
+  font-family: "nexa_rust_sansblack";
+  text-decoration: none;
+  color: #F8AC20;
+  display: block;
+  padding: 12px;
+  transition: all 250ms; }
+  nav a:hover {
+    color: white; }
+nav ul {
+  list-style: none;
+  overflow: auto; }
+  nav ul li {
+    margin: 0;
+    padding: 0;
+    float: left; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+header {
+  background: #CF4B19;
+  padding: 5px 0; }
+
+.about {
+  background: #4C3D40; }
+  .about h2 {
+    color: #F17721; }
+  .about p {
+    color: white; }
+
+.venue {
+  background-color: #F5F5F5; }
+  .venue .left-title {
+    color: #4C3D40; }
+
+.masthead {
+  text-align: center;
+  background-image: url(../img/masthead-bg.jpg);
+  padding: 55px 0; }
+  .masthead img {
+    max-width: 80%; }
+  .masthead p {
+    color: white; }
+  .masthead .btn-hollow {
+    font-size: 24px;
+    border: 1px solid white;
+    padding: 15px 30px;
+    background-color: transparent;
+    font-family: "Bitter", serif;
+    border-radius: 4px;
+    color: white;
+    transition: all 250ms; }
+    .masthead .btn-hollow:hover {
+      background: white;
+      color: #F8AC20;
+      cursor: pointer; }
+
+.faq {
+  background: #C93B1A;
+  color: white;
+  padding: 50px; }
+  .faq .wrapper dd {
+    margin-bottom: 50px; }
+
+.sponsors {
+  background: #F5F5F5;
+  padding: 10px 0;
+  text-align: center; }
+  .sponsors h3 {
+    color: #F17721;
+    font-family: "Bitter", serif;
+    font-size: 26px; }
+  .sponsors img {
+    display: inline-block;
+    padding: 15px; }
+  .sponsors .sponsors-logos {
+    max-width: 1100px;
+    margin: 0 auto; }
+
+.left-title,
+.right-desc {
+  text-align: center;
+  padding: 30px; }
+
+.about .left-title {
+  padding: 0;
+  padding-top: 30px; }
+
+.venue .left-title {
+  padding-bottom: 30px; }
+
+.right-desc {
+  padding-top: 0; }
+
+dl a {
+  color: #F8AC20; }
+
+p,
+dt,
+dd {
+  font: normal 18px "Catamaran", sans-serif;
+  line-height: 22px; }
+
+dt {
+  font-weight: bold; }
+
+dd {
+  padding: 0;
+  margin: 0; }
+
+.map,
+.map iframe {
+  height: 425px; }
+
+.xs-nav {
+  height: 70px; }
+  .xs-nav ul {
+    background: #CF4B19;
+    position: absolute;
+    top: 60px;
+    width: 100%; }
+    .xs-nav ul li {
+      float: none; }
+  .xs-nav .logo-mobile {
+    position: absoulute;
+    left: 10px;
+    top: 0; }
+  .xs-nav .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 30px; }
+    .xs-nav .menu-toggle img {
+      width: 24px; }
+
+footer {
+  background: #F17721;
+  padding: 5px 0; }
+  footer p {
+    font-size: 12px;
+    text-align: center;
+    color: white; }
+
+@media (min-width: 768px) {
+  p,
+  dt,
+  dd {
+    font: normal 26px "Catamaran", sans-serif;
+    line-height: 40px; }
+
+  dt {
+    font-weight: bold; } }
+@media (min-width: 992px) {
+  .xs-nav {
+    display: none; }
+
+  .lg-nav {
+    display: block; }
+
+  h2,
+  .masthead p {
+    font: bold 46px "Bitter", serif; }
+
+  nav {
+    width: 1020px;
+    margin: 0 auto;
+    display: block; }
+
+  .footer p {
+    font-size: 20px; }
+
+  .sponsors {
+    padding: 100px 0; }
+    .sponsors h3 {
+      font-size: 36px; } }
+@media (min-width: 1200px) {
+  .venue {
+    overflow: auto;
+    height: 425px; }
+    .venue .left-title {
+      padding-top: 100px; }
+
+  .about {
+    padding: 150px 0;
+    overflow: auto; }
+
+  .left-title,
+  .right-desc {
+    padding: 0; }
+
+  .left-title {
+    width: 540px;
+    float: left;
+    text-align: right; }
+
+  .right-desc,
+  .map {
+    width: 700px;
+    float: left;
+    padding-left: 85px;
+    text-align: left; }
+
+  .faq {
+    padding: 125px; }
+    .faq .wrapper {
+      width: 1180px;
+      margin: 0 auto; }
+      .faq .wrapper dl {
+        -webkit-columns: 300px 3;
+        -moz-columns: 300px 3;
+        columns: 300px 3; } }
+
+/*# sourceMappingURL=main.css.map */
