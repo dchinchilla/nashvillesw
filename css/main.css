@@ -2,6 +2,11 @@ html {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
+  html a {
+    color: #F17721; }
+    html a:hover {
+      color: #A55A99;
+      cursor: pointer; }
 
 *, *:before, *:after {
   -webkit-box-sizing: inherit;
@@ -12,15 +17,19 @@ html {
   -moz-osx-font-smoothing: grayscale; }
 
 h2,
-.masthead p {
+.masthead-home p {
   font: bold 28px "Bitter", serif;
   letter-spacing: -0.5px; }
 
 .lg-nav {
   display: none; }
 
+.nav-logo {
+  width: 120px;
+  height: auto; }
+
 nav a {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "nexa_rust_sansblack";
   text-decoration: none;
   color: #F8AC20;
@@ -31,7 +40,11 @@ nav a {
     color: white; }
 nav ul {
   list-style: none;
-  overflow: auto; }
+  overflow: auto;
+  display: flex;
+  align-items: left;
+  justify-content: center;
+  flex-direction: column; }
   nav ul li {
     margin: 0;
     padding: 0;
@@ -45,49 +58,242 @@ header {
   background: #CF4B19;
   padding: 5px 0; }
 
+.tagline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #502D5C;
+  padding: 120px 5%; }
+  .tagline img {
+    max-width: 300px;
+    height: auto;
+    display: block; }
+  .tagline h2 {
+    color: #F17721;
+    font-family: "nexa_rust_sansblack";
+    font-size: 36px;
+    padding-left: 5%;
+    text-transform: uppercase; }
+
+.text-yellow {
+  color: #F8AC20; }
+
+.text-light-red {
+  color: #E34343; }
+
 .about {
-  background: #4C3D40; }
+  background: #764F84;
+  padding: 70px 5%; }
   .about h2 {
     color: #F17721; }
   .about p {
-    color: white; }
+    color: white;
+    text-align: center;
+    max-width: 1024px;
+    display: block;
+    margin: 0 auto; }
 
 .venue {
-  background-color: #F5F5F5; }
+  background-color: #F5F5F5;
+  color: #91756D;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 5%; }
+  .venue .blocks-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+  .venue h2 {
+    color: #91756D;
+    text-align: center;
+    font-family: "nexa_rust_sansblack";
+    font-size: 40px;
+    text-transform: uppercase; }
+  .venue .venue-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    max-width: 320px;
+    padding: 0 5%;
+    box-sizing: border-box; }
+    .venue .venue-block img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 10px auto; }
+    .venue .venue-block p {
+      font-size: 18px;
+      line-height: 22px; }
   .venue .left-title {
     color: #4C3D40; }
 
-.masthead {
+.btn-hollow {
+  font-size: 24px;
+  border: 1px solid white;
+  padding: 15px 30px;
+  background-color: transparent;
+  font-family: "Bitter", serif;
+  border-radius: 4px;
+  color: white;
+  transition: all 250ms; }
+  .btn-hollow:hover {
+    background: white;
+    color: #F8AC20;
+    cursor: pointer; }
+
+.masthead-home {
   text-align: center;
   background-image: url(../img/masthead-bg.jpg);
   padding: 55px 0; }
-  .masthead img {
-    max-width: 80%; }
-  .masthead p {
+  .masthead-home img {
+    width: 70%;
+    max-width: 720px; }
+  .masthead-home p {
     color: white; }
-  .masthead .btn-hollow {
+
+.masthead-agenda {
+  height: 580px;
+  text-align: center;
+  background-image: url(../img/AgendaBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .masthead-agenda img {
+    display: block;
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 20px; }
+  .masthead-agenda h2 {
+    font-family: "nexa_rust_sansblack";
+    font-size: 50px;
+    color: #F8AC20; }
+
+.masthead-sponsors {
+  height: 580px;
+  text-align: center;
+  background-image: url(../img/SponsorsBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .masthead-sponsors img {
+    display: block;
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 20px; }
+  .masthead-sponsors h2 {
+    font-family: "nexa_rust_sansblack";
+    font-size: 50px;
+    color: #A55A99; }
+
+.masthead-volunteers {
+  height: 580px;
+  text-align: center;
+  background-image: url(../img/VolunteersBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .masthead-volunteers img {
+    display: block;
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 0px; }
+  .masthead-volunteers h2 {
+    font-family: "nexa_rust_sansblack";
+    font-size: 50px;
+    color: #F8AC20;
+    margin: 10px 0; }
+  .masthead-volunteers h3 {
+    font-family: "Catamaran", sans-serif;
     font-size: 24px;
-    border: 1px solid white;
-    padding: 15px 30px;
-    background-color: transparent;
-    font-family: "Bitter", serif;
-    border-radius: 4px;
-    color: white;
-    transition: all 250ms; }
-    .masthead .btn-hollow:hover {
-      background: white;
-      color: #F8AC20;
-      cursor: pointer; }
+    color: #F8AC20;
+    margin: 15px 0;
+    padding: 0 5%; }
+
+.masthead-pitches {
+  height: 580px;
+  text-align: center;
+  background-image: url(../img/PitchesBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .masthead-pitches img {
+    display: block;
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 30px; }
+  .masthead-pitches h2 {
+    font-family: "nexa_rust_sansblack";
+    font-size: 50px;
+    line-height: 50px;
+    color: #F8AC20;
+    margin: 10px 0; }
+  .masthead-pitches h3 {
+    font-family: "Catamaran", sans-serif;
+    font-size: 24px;
+    color: #F8AC20;
+    margin: 15px 0; }
+
+.masthead-contact {
+  height: 580px;
+  text-align: center;
+  background-image: url(../img/ContactBg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 55px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+  .masthead-contact img {
+    display: block;
+    max-width: 224px;
+    height: auto;
+    margin-bottom: 0px; }
+  .masthead-contact h2 {
+    font-family: "nexa_rust_sansblack";
+    font-size: 50px;
+    color: #F17721; }
+
+.mast-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
 
 .faq {
-  background: #C93B1A;
+  background: #B62626;
   color: white;
   padding: 50px; }
   .faq .wrapper dd {
     margin-bottom: 50px; }
 
+.agenda-container {
+  padding: 80px 5%; }
+
 .sponsors {
-  background: #F5F5F5;
+  background: #ffffff;
   padding: 10px 0;
   text-align: center; }
   .sponsors h3 {
@@ -95,11 +301,16 @@ header {
     font-family: "Bitter", serif;
     font-size: 26px; }
   .sponsors img {
+    max-width: 300px;
     display: inline-block;
     padding: 15px; }
   .sponsors .sponsors-logos {
     max-width: 1100px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
 
 .left-title,
 .right-desc {
@@ -137,7 +348,9 @@ dd {
   height: 425px; }
 
 .xs-nav {
-  height: 70px; }
+  height: 70px;
+  display: flex;
+  align-items: center; }
   .xs-nav ul {
     background: #CF4B19;
     position: absolute;
@@ -164,21 +377,43 @@ footer {
     text-align: center;
     color: white; }
 
+.apostrophe {
+  font-family: "Bitter", serif; }
+
 @media (min-width: 768px) {
   p,
   dt,
   dd {
-    font: normal 26px "Catamaran", sans-serif;
-    line-height: 40px; }
+    font: normal 20px "Catamaran", sans-serif;
+    line-height: 36px;
+    padding: 0 15px; }
 
   dt {
-    font-weight: bold; } }
+    font-weight: bold; }
+
+  .tagline {
+    flex-direction: row; }
+    .tagline h2 {
+      font-size: 60px; }
+
+  .venue .blocks-wrapper {
+    flex-direction: row; }
+
+  .mastheads h2 {
+    font-size: 60px;
+    line-height: 60px; }
+  .mastheads h3 {
+    font-size: 30px; } }
 @media (min-width: 992px) {
   .xs-nav {
     display: none; }
 
   .lg-nav {
     display: block; }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center; }
 
   h2,
   .masthead p {
@@ -199,12 +434,12 @@ footer {
 @media (min-width: 1200px) {
   .venue {
     overflow: auto;
-    height: 425px; }
+    height: 525px; }
     .venue .left-title {
       padding-top: 100px; }
 
   .about {
-    padding: 150px 0;
+    padding: 80px 0;
     overflow: auto; }
 
   .left-title,
@@ -226,7 +461,7 @@ footer {
   .faq {
     padding: 125px; }
     .faq .wrapper {
-      width: 1180px;
+      max-width: 1180px;
       margin: 0 auto; }
       .faq .wrapper dl {
         -webkit-columns: 300px 3;

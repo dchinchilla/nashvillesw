@@ -1,9 +1,18 @@
-$red:         #C93B1A
+$red:         	#C93B1A
 $orange:        #F17721
 $brown:         #4C3D40
+$light-brown:	#91756D
 $dark-orange:   #CF4B19
 $yellow:        #F8AC20
 $light-gray:    #F5F5F5
+
+$dark-purple:	#502D5C
+$purple:		#A55A99
+$alt-purple:	#764F84
+
+$light-red:		#E34343
+$red:			#B62626
+
 
 $bitter:        'Bitter', serif
 $catamaran:     'Catamaran', sans-serif
@@ -13,6 +22,12 @@ html
   -webkit-box-sizing: border-box
   -moz-box-sizing: border-box
   box-sizing: border-box
+  
+  a
+    color: $orange
+    &:hover
+      color: $purple
+      cursor: pointer
 
 *, *:before, *:after 
   -webkit-box-sizing: inherit
@@ -23,16 +38,20 @@ html
   -moz-osx-font-smoothing: grayscale
 
 h2,
-.masthead p
+.masthead-home p
   font: bold 28px $bitter
   letter-spacing: -0.5px
 
 .lg-nav
   display: none
 
+.nav-logo
+  width: 120px
+  height: auto
+
 nav
   a
-    font-size: 24px
+    font-size: 20px
     font-family: $nexarust
     text-decoration: none
     color: $yellow
@@ -46,6 +65,10 @@ nav
   ul
     list-style: none
     overflow: auto
+    display: flex
+    align-items: left
+    justify-content: center
+    flex-direction: column
     
     li
       margin: 0
@@ -60,46 +83,256 @@ header
   background: $dark-orange
   padding: 5px 0
 
+.tagline
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  background: $dark-purple
+  padding: 120px 5%
+  
+  img
+    max-width: 300px
+    height: auto
+    display: block
+  
+  h2
+    color: $orange
+    font-family: $nexarust
+    font-size: 36px
+    padding-left: 5%
+    text-transform: uppercase
+
+.text-yellow
+  color: $yellow
+
+.text-light-red
+  color: $light-red
+
+
 .about
-  background: $brown
+  background: $alt-purple
+  padding: 70px 5%
 
   h2
     color: $orange
   
   p
     color: white
+    text-align: center
+    max-width: 1024px
+    display: block
+    margin: 0 auto
 
 .venue
   background-color: $light-gray
+  color: $light-brown
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  padding: 40px 5%
+  
+  .blocks-wrapper
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-direction: column
+  
+  h2
+    color: $light-brown
+    text-align: center
+    font-family: $nexarust
+    font-size: 40px
+    text-transform: uppercase
+  
+  .venue-block
+    display: flex
+    flex-direction: column
+    justify-content: center
+    text-align: center
+    max-width: 320px
+    padding: 0 5%
+    box-sizing: border-box
+    
+    img
+      display: block
+      max-width: 100%
+      height: auto
+      margin: 10px auto
+    
+    p
+      font-size: 18px
+      line-height: 22px
 
   .left-title
     color: $brown
+  
+.btn-hollow
+  font-size: 24px
+  border: 1px solid white
+  padding: 15px 30px
+  background-color: transparent
+  font-family: $bitter
+  border-radius: 4px
+  color: white
+  transition: all 250ms
 
-.masthead
+  &:hover
+    background: white
+    color: $yellow
+    cursor: pointer
+      
+.masthead-home
   text-align: center
   background-image: url(../img/masthead-bg.jpg)
   padding: 55px 0
 
   img
-    max-width: 80%
+    width: 70%
+    max-width: 720px
 
   p
     color: white
   
-  .btn-hollow
-    font-size: 24px
-    border: 1px solid white
-    padding: 15px 30px
-    background-color: transparent
-    font-family: $bitter
-    border-radius: 4px
-    color: white
-    transition: all 250ms
+.masthead-agenda
+  height: 580px
+  text-align: center
+  background-image: url(../img/AgendaBg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 55px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  img
+    display: block
+    max-width: 224px
+    height: auto
+    margin-bottom: 20px
+    
+  h2
+    font-family: $nexarust
+    font-size: 50px
+    color: $yellow
 
-    &:hover
-      background: white
-      color: $yellow
-      cursor: pointer
+.masthead-sponsors
+  height: 580px
+  text-align: center
+  background-image: url(../img/SponsorsBg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 55px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  img
+    display: block
+    max-width: 224px
+    height: auto
+    margin-bottom: 20px
+    
+  h2
+    font-family: $nexarust
+    font-size: 50px
+    color: $purple
+
+.masthead-volunteers
+  height: 580px
+  text-align: center
+  background-image: url(../img/VolunteersBg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 55px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  img
+    display: block
+    max-width: 224px
+    height: auto
+    margin-bottom: 0px
+    
+  h2
+    font-family: $nexarust
+    font-size: 50px
+    color: $yellow
+    margin: 10px 0
+  
+  h3
+    font-family: $catamaran
+    font-size: 24px
+    color: $yellow
+    margin: 15px 0
+    padding: 0 5%
+
+
+.masthead-pitches
+  height: 580px
+  text-align: center
+  background-image: url(../img/PitchesBg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 55px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  img
+    display: block
+    max-width: 224px
+    height: auto
+    margin-bottom: 30px
+    
+  h2
+    font-family: $nexarust
+    font-size: 50px
+    line-height: 50px
+    color: $yellow
+    margin: 10px 0
+  
+  h3
+    font-family: $catamaran
+    font-size: 24px
+    color: $yellow
+    margin: 15px 0
+
+.masthead-contact
+  height: 580px
+  text-align: center
+  background-image: url(../img/ContactBg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  padding: 55px 0
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  
+  img
+    display: block
+    max-width: 224px
+    height: auto
+    margin-bottom: 0px
+    
+  h2
+    font-family: $nexarust
+    font-size: 50px
+    color: $orange
+
+.mast-wrapper
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  text-align: center
 
 .faq
   background: $red
@@ -110,8 +343,11 @@ header
     dd
       margin-bottom: 50px
 
+.agenda-container
+  padding: 80px 5%
+
 .sponsors
-  background: $light-gray
+  background: #ffffff
   padding: 10px 0
   text-align: center
 
@@ -121,12 +357,17 @@ header
     font-size: 26px
   
   img
+    max-width: 300px
     display: inline-block
     padding: 15px
   
   .sponsors-logos
     max-width: 1100px
     margin: 0 auto
+    display: flex
+    flex-wrap: wrap
+    align-items: center
+    justify-content: center
 
 .left-title,
 .right-desc
@@ -137,7 +378,7 @@ header
   .left-title
     padding: 0
     padding-top: 30px
-
+  
 .venue
   .left-title
     padding-bottom: 30px    
@@ -167,6 +408,8 @@ dd
 
 .xs-nav
   height: 70px
+  display: flex
+  align-items: center
 
   ul
     background: $dark-orange
@@ -200,15 +443,38 @@ footer
     text-align: center
     color: white
 
+.apostrophe
+  font-family: $bitter
+
+
 @media (min-width: 768px)
   p,
   dt,
   dd
-    font: normal 26px $catamaran
-    line-height: 40px
+    font: normal 20px $catamaran
+    line-height: 36px
+    padding: 0 15px
   
   dt
     font-weight: bold
+  
+  .tagline
+    flex-direction: row
+    
+    h2
+      font-size: 60px
+  
+  .venue
+    .blocks-wrapper
+      flex-direction: row
+  
+  .mastheads
+    h2
+      font-size: 60px
+      line-height: 60px
+    
+    h3
+      font-size: 30px
 
 @media (min-width: 992px)
 
@@ -218,6 +484,11 @@ footer
   .lg-nav
     display: block
 
+  nav
+    ul
+      flex-direction: row
+      align-items: center
+  
   h2,
   .masthead p
     font: bold 46px $bitter
@@ -240,13 +511,13 @@ footer
 @media (min-width: 1200px)
   .venue  
     overflow: auto
-    height: 425px
+    height: 525px
 
     .left-title
       padding-top: 100px
 
   .about
-    padding: 150px 0
+    padding: 80px 0
     overflow: auto
 
   .left-title,
@@ -269,7 +540,7 @@ footer
     padding: 125px
 
     .wrapper
-      width: 1180px
+      max-width: 1180px
       margin: 0 auto
 
       dl
