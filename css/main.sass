@@ -99,7 +99,7 @@ header
   h2
     color: $orange
     font-family: $nexarust
-    font-size: 36px
+    font-size: 33px
     padding-left: 5%
     text-transform: uppercase
 
@@ -476,7 +476,7 @@ footer
     flex-direction: row
     
     h2
-      font-size: 60px
+      font-size: 40px
   
   .venue
     .blocks-wrapper
@@ -490,13 +490,29 @@ footer
     h3
       font-size: 30px
 
-@media (min-width: 992px)
+@media (min-width: 850px)
+  
+  .tagline
+    h2
+      font-size: 60px
 
+
+@media (min-width: 992px)
+  
+  header
+    padding: 0
+  
+  main
+    padding-top: 90px
+  
   .xs-nav
     display: none
   
   .lg-nav
     display: block
+    background: $dark-orange
+    width: 100%
+    position: fixed
 
   nav
     ul

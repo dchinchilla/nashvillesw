@@ -72,7 +72,7 @@ header {
   .tagline h2 {
     color: #F17721;
     font-family: "nexa_rust_sansblack";
-    font-size: 36px;
+    font-size: 33px;
     padding-left: 5%;
     text-transform: uppercase; }
 
@@ -406,7 +406,7 @@ footer {
   .tagline {
     flex-direction: row; }
     .tagline h2 {
-      font-size: 60px; }
+      font-size: 40px; }
 
   .venue .blocks-wrapper {
     flex-direction: row; }
@@ -416,12 +416,24 @@ footer {
     line-height: 60px; }
   .mastheads h3 {
     font-size: 30px; } }
+@media (min-width: 850px) {
+  .tagline h2 {
+    font-size: 60px; } }
 @media (min-width: 992px) {
+  header {
+    padding: 0; }
+
+  main {
+    padding-top: 90px; }
+
   .xs-nav {
     display: none; }
 
   .lg-nav {
-    display: block; }
+    display: block;
+    background: #CF4B19;
+    width: 100%;
+    position: fixed; }
 
   nav ul {
     flex-direction: row;
