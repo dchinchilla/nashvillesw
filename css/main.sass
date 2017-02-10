@@ -99,10 +99,10 @@ header
   h2
     color: $orange
     font-family: $nexarust
-    font-size: 36px
+    font-size: 33px
     padding-left: 5%
     text-transform: uppercase
-
+  
 .text-yellow
   color: $yellow
 
@@ -335,7 +335,7 @@ header
   text-align: center
 
 .faq
-  background: $red
+  background: $orange
   color: white
   padding: 50px
 
@@ -356,10 +356,12 @@ header
     font-family: $bitter
     font-size: 26px
   
-  img
-    max-width: 300px
-    display: inline-block
-    padding: 15px
+  h4
+    font-size: 20px
+    font-family: "Bitter", sans-serif
+    text-transform: uppercase
+    letter-spacing: 5px
+    color: $purple
   
   .sponsors-logos
     max-width: 1100px
@@ -368,6 +370,27 @@ header
     flex-wrap: wrap
     align-items: center
     justify-content: center
+
+
+.tier1-logos, .tier2-logos
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+.tier1-logos
+  margin-bottom: 70px
+  
+  img
+    max-width: 400px
+    display: inline-block
+    padding: 15px
+
+.tier2-logos
+  img
+    max-width: 200px
+    display: inline-block
+    padding: 15px
 
 .left-title,
 .right-desc
@@ -435,17 +458,49 @@ dd
       width: 24px
 
 footer
-  background: $orange
-  padding: 5px 0
+  background: #30292a
+  padding-top: 5px
 
   p
-    font-size: 12px
+    font-size: 16px
     text-align: center
     color: white
+
+.acklen-footer
+  background: #3c3c3c
+  padding: 30px 5%
+  
+  a
+    display: block
+    margin: 0 auto
+    width: 70%
+    opacity: 0.8
+    &:hover
+      opacity: 1
+    
+    img
+      display: block
+      margin: 0 auto
+      max-width: 340px
+      height: auto
+
+
 
 .apostrophe
   font-family: $bitter
 
+
+@media (min-width: 640px)
+.tagline
+  padding: 60px 5%
+  
+.mastheads
+  img
+    max-width: 170px
+    
+  h2
+    font-size: 40px
+    padding: 0 5%
 
 @media (min-width: 768px)
   p,
@@ -462,7 +517,7 @@ footer
     flex-direction: row
     
     h2
-      font-size: 60px
+      font-size: 40px
   
   .venue
     .blocks-wrapper
@@ -476,13 +531,29 @@ footer
     h3
       font-size: 30px
 
-@media (min-width: 992px)
+@media (min-width: 850px)
+  
+  .tagline
+    h2
+      font-size: 60px
 
+
+@media (min-width: 992px)
+  
+  header
+    padding: 0
+  
+  main
+    padding-top: 90px
+  
   .xs-nav
     display: none
   
   .lg-nav
     display: block
+    background: $dark-orange
+    width: 100%
+    position: fixed
 
   nav
     ul

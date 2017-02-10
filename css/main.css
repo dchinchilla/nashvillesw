@@ -72,7 +72,7 @@ header {
   .tagline h2 {
     color: #F17721;
     font-family: "nexa_rust_sansblack";
-    font-size: 36px;
+    font-size: 33px;
     padding-left: 5%;
     text-transform: uppercase; }
 
@@ -283,7 +283,7 @@ header {
   text-align: center; }
 
 .faq {
-  background: #B62626;
+  background: #F17721;
   color: white;
   padding: 50px; }
   .faq .wrapper dd {
@@ -300,10 +300,12 @@ header {
     color: #F17721;
     font-family: "Bitter", serif;
     font-size: 26px; }
-  .sponsors img {
-    max-width: 300px;
-    display: inline-block;
-    padding: 15px; }
+  .sponsors h4 {
+    font-size: 20px;
+    font-family: "Bitter", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #A55A99; }
   .sponsors .sponsors-logos {
     max-width: 1100px;
     margin: 0 auto;
@@ -311,6 +313,24 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center; }
+
+.tier1-logos, .tier2-logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.tier1-logos {
+  margin-bottom: 70px; }
+  .tier1-logos img {
+    max-width: 400px;
+    display: inline-block;
+    padding: 15px; }
+
+.tier2-logos img {
+  max-width: 200px;
+  display: inline-block;
+  padding: 15px; }
 
 .left-title,
 .right-desc {
@@ -370,15 +390,40 @@ dd {
       width: 24px; }
 
 footer {
-  background: #F17721;
-  padding: 5px 0; }
+  background: #30292a;
+  padding-top: 5px; }
   footer p {
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
     color: white; }
 
+.acklen-footer {
+  background: #3c3c3c;
+  padding: 30px 5%; }
+  .acklen-footer a {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    opacity: 0.8; }
+    .acklen-footer a:hover {
+      opacity: 1; }
+    .acklen-footer a img {
+      display: block;
+      margin: 0 auto;
+      max-width: 340px;
+      height: auto; }
+
 .apostrophe {
   font-family: "Bitter", serif; }
+
+.tagline {
+  padding: 60px 5%; }
+
+.mastheads img {
+  max-width: 170px; }
+.mastheads h2 {
+  font-size: 40px;
+  padding: 0 5%; }
 
 @media (min-width: 768px) {
   p,
@@ -394,7 +439,7 @@ footer {
   .tagline {
     flex-direction: row; }
     .tagline h2 {
-      font-size: 60px; }
+      font-size: 40px; }
 
   .venue .blocks-wrapper {
     flex-direction: row; }
@@ -404,12 +449,24 @@ footer {
     line-height: 60px; }
   .mastheads h3 {
     font-size: 30px; } }
+@media (min-width: 850px) {
+  .tagline h2 {
+    font-size: 60px; } }
 @media (min-width: 992px) {
+  header {
+    padding: 0; }
+
+  main {
+    padding-top: 90px; }
+
   .xs-nav {
     display: none; }
 
   .lg-nav {
-    display: block; }
+    display: block;
+    background: #CF4B19;
+    width: 100%;
+    position: fixed; }
 
   nav ul {
     flex-direction: row;
