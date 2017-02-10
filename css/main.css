@@ -300,6 +300,12 @@ header {
     color: #F17721;
     font-family: "Bitter", serif;
     font-size: 26px; }
+  .sponsors h4 {
+    font-size: 20px;
+    font-family: "Bitter", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #A55A99; }
   .sponsors .sponsors-logos {
     max-width: 1100px;
     margin: 0 auto;
@@ -314,10 +320,12 @@ header {
   justify-content: center;
   flex-wrap: wrap; }
 
-.tier1-logos img {
-  max-width: 400px;
-  display: inline-block;
-  padding: 15px; }
+.tier1-logos {
+  margin-bottom: 70px; }
+  .tier1-logos img {
+    max-width: 400px;
+    display: inline-block;
+    padding: 15px; }
 
 .tier2-logos img {
   max-width: 200px;
@@ -407,6 +415,15 @@ footer {
 
 .apostrophe {
   font-family: "Bitter", serif; }
+
+.tagline {
+  padding: 60px 5%; }
+
+.mastheads img {
+  max-width: 170px; }
+.mastheads h2 {
+  font-size: 40px;
+  padding: 0 5%; }
 
 @media (min-width: 768px) {
   p,
