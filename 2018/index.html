@@ -21,15 +21,13 @@
       <div class="navigation">
         <nav>
                 <ul>
-                    <li><a href="index.html">Event info</a>
+                    <li><a href="#lead">Lead an event</a>
                     </li>
-                    <li><a href="leadaneventsection">Lead an event</a>
+                    <li><a href="#volunteer">Volunteer</a>
                     </li>
-                    <li><a href="Volunteersection">Volunteer</a>
+                    <li><a href="#volunteer">Become a Sponsor</a>
                     </li>
-                    <li><a href="Becomeasponsorsection">Become a Sponsor</a>
-                    </li>
-                    <li><a href="Conctactsection">Contact</a>
+                    <li><a href="#contactid">Contact</a>
                     </li>
                 </ul>
         </nav>
@@ -46,7 +44,7 @@
 
     <main>
 
-      <section class="taglinebanner">
+      <section id="tagline" class="taglinebanner">
         <div class="taglineimg1">
           <img src="img/laptopblue.svg">
 
@@ -74,7 +72,7 @@
 
       </section><!--Tagline banner-->
 
-      <section class="descriptionsection">
+      <section id="description" class="descriptionsection">
         <div class="description1">
           <img id="handphone" src="img/handphone.svg">
           <div class="descriptiontext">
@@ -104,7 +102,7 @@
         </div>
       </section><!--/Descrition section-->
 
-      <section class="speakerssection">
+      <section id="speakers" class="speakerssection">
         <h1>2017 FEATURED SPEAKERS</h1>
         <div class="speakerscontainer">
           <div class="speaker">
@@ -124,14 +122,22 @@
           </div>
         </div>
       </section><!--Speakers section-->
-      <section class="leadeventsection">
+      <section id="lead" class="leadeventsection">
         
 
 
 
       </section><!--/Lead an event section-->
 
-      <section class="contact">
+      
+      <section id="volunteer" class="volunteersection">
+        
+
+
+
+      </section><!--/Volunteer section-->
+
+      <section id="contactid" class="contact">
         <div class="contactcontent">
           <div class="getintouch">
           <span>GET IN TOUCH</span>
@@ -172,6 +178,8 @@
   jQuery('#x').click(function(){
   jQuery('.navigationwrapper').fadeToggle();
   });
+
+  
 
   });
 
