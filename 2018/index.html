@@ -17,9 +17,7 @@
 <div class="container">
 
     <header>
-
-      <img id="NSWlogo" src="img/NSWlogo.svg">
-
+      <div class="navigationwrapper"> 
       <div class="navigation">
         <nav>
                 <ul>
@@ -35,8 +33,14 @@
                     </li>
                 </ul>
         </nav>
-
+        <img id="x" src="img/x.svg">
       </div>
+      </div>
+      <div class="logowrapper">
+      <img id="NSWlogo" src="img/NSWlogo.svg">
+      <img id="hamburger" src="img/hamburguer.svg">
+      </div> 
+     
 
     </header>
 
@@ -154,4 +158,27 @@
     </footer>
 </div>
   </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+  jQuery(document).ready(function(){
+
+  jQuery('#hamburger').click(function(){
+  jQuery('.navigationwrapper').fadeToggle();
+  });
+
+  jQuery('#x').click(function(){
+  jQuery('.navigationwrapper').fadeToggle();
+  });
+
+  });
+
+  </script>
+
+
+
+
+
   </html>
