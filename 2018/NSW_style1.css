@@ -19,31 +19,50 @@ html,body {
     height: 100%;
 
 }
+
 body{
 	font-family: 'Rubik', sans-serif;
 	-webkit-font-smoothing: antialiased;
 }
+.container{
+	box-sizing: border-box;
+}
 
 header{
-	display: flex;
+	width: 100%;
 	height: 100px;
-	align-items: baseline;
+	display: flex;
 	flex-direction: row-reverse;
+	align-content: baseline;
 	justify-content: space-between;
-	padding-bottom: 20px;
+	margin-bottom: 20px;
 
 }
 
-#NSWlogo{
-	margin-left:30px;
-	margin-right: 20px;
-	margin-top: 30px;
+.logowrapper{
+	box-sizing: border-box;
+	width: 30%;
+	padding: 30px;
+
 }
 #hamburger{
 	display: none;
 }
+.navigationwrapper{
+	display: flex;
+	align-items: flex-end;
+
+
+
+}
+
 .navigation{
-	padding-right: 40px;
+	width: 100%;
+	display: flex;
+	align-content: flex-end;
+	justify-content: flex-end;
+
+
 }
 
 .navigation ul {
@@ -56,7 +75,6 @@ header{
 
 .navigation li {
     
-
 }
 
 .navigation li a {
@@ -65,18 +83,18 @@ header{
     padding: 14px 30px;
     text-decoration: none;
     color: #939393;
+    font-weight: 500;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 .navigation li a:hover {
     color: #FF7000;
     text-decoration: underline;
-    font-weight: bold;
+    font-weight: 700;
 }
 #x{
 	display: none;
 }
-
 
 section.taglinebanner {
     /*background-color: #c1edff;*/
@@ -219,11 +237,79 @@ section.speakerssection{
 .speaker{
 	margin: 10px;
 } 
-section.leadeventsection{
-	height: 650px;
-	background-color: #FFB100;
+
+.speaker img{
+	display: block;
+	width: 100%;
+	height: auto;
 }
 
+section.leadeventsection{
+	height: 550px;
+	background-color: #FFB100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.leadimg1, .leadimg2{
+	display: flex;
+	width: 30%;
+	height: 100%;
+}
+.leadimg1{
+	justify-content:flex-end;
+	align-items: baseline;
+	flex-direction: column;
+}
+.leadimg1 img{
+	width: 100%;
+}
+.leadimg2{
+	justify-content: flex-end;
+	align-content: baseline;
+	flex-direction: column;
+}
+.leadimg2 img{
+	width: 100%;
+}
+
+.leadcontent{
+	width: 40%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	text-align: center;
+	padding: 25px;
+	padding-bottom: 100px;
+	box-sizing: border-box;
+}
+.leadcontent h1{
+	font-size: 50px;
+	color: #EA6825;
+}
+.leadcontent h2{
+	font-weight: lighter;
+	color: white;
+}
+.leadcontent a{
+	background-color: #00FFDD;
+    color: #00868B;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+.leadcontent a:hover{
+	background-color: white;
+	color: #EA6825;
+
+}
 section.contact{
 	height: 300px;
 	display: flex;
@@ -291,7 +377,8 @@ section.contact{
 	justify-content: center;
 	display: flex;
 	color: white;
-	font-weight:
+	font-weight:lighter;
+	font-size: 15px;
 }
 
 .acklenfooter{
@@ -313,20 +400,12 @@ section.contact{
 
 @media (max-width: 1000px) {
 
-		header{
+	header{
 		flex-direction: column;
-	}
-	#NSWlogo{
-		width: 60%;
-		min-width: 250px;
-		margin: 20px;
-		display: inline;
+		box-sizing: border-box;
 	}
 	.logowrapper{
-		display: flex;
-		justify-content:  space-between;
-		align-items:  center;
-		width:  100%;
+		width: 40%;
 	}
 
 	#hamburger{
@@ -334,11 +413,12 @@ section.contact{
 		/* margin-top: 40px; */
 		/* right: 40px; */
 		/* position: absolute; */
-		padding: 20px;
-		padding-right: 40px;
+		position: absolute;
+		right: 40px;
+		top: 40px;
 	}
 	
-.navigationwrapper {display: none;}
+	.navigationwrapper {display: none;}
 
 	.navigation{
 		position: absolute;
@@ -348,7 +428,8 @@ section.contact{
 		z-index: 2;
 		display: flex;
 		align-items: center;
-		justify-content: center;	
+		justify-content: center;
+		padding: 0;	
 	}
 	.navigation ul{
 		display: flex;
@@ -375,14 +456,40 @@ section.contact{
 		display: block;
 		position: absolute;
 		right: 30px;
-		top: 20px;
+		top: 30px;
 		padding: 10px;
 	}
 
+	section.leadeventsection {
+		height: 1000px;
+		flex-direction: column;
+	}
+	.leadcontent{
+		width: 100%;
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+	.leadimg1{
+		display: none;
+	}
+	.leadimg2{
+		width: 100%;
+		flex-direction: row;
+		align-content: flex-end;
+	}
+	.leadimg2 img{
+		width: auto;
+	}
+	
+
+	
 }
 
 @media (max-width: 700px) {
 
+	.logowrapper{
+		width: 70%;
+	}
 
 	section.taglinebanner{
 		flex-direction: column;
