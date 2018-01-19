@@ -45,6 +45,12 @@ header{
 	padding: 30px;
 
 }
+#NSWlogo{
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
 #hamburger{
 	display: none;
 }
@@ -168,6 +174,11 @@ section.descriptionsection{
 .description1{
 	width: 50%;
 	display: flex;
+}
+#NSWlogogrey{
+	display: block;
+	width: 100%;
+	height: auto;
 }
 .description2{
 	width: 50%;
@@ -479,9 +490,8 @@ section.contact{
 	}
 	.leadimg2 img{
 		width: auto;
+		max-height: 100%;
 	}
-	
-
 	
 }
 
