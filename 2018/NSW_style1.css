@@ -330,6 +330,83 @@ section.leadeventsection{
 	color: #EA6825;
 
 }
+section.volunteersection{
+	height: 600px;
+	background-image: url(img/networking.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+}
+.v, .p{
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 80%
+}
+.v h1{
+	font-size: 50px;
+    color: #00C1C8;
+    margin: 10px;
+}
+.v h2, .p h2{
+	color: #939393;
+	font-weight: lighter;	
+	padding-bottom: 20px;
+}
+.p h1{
+	font-size: 50px;
+    color: #FF7000;
+    margin: 10px;
+}
+#volunteerbutton{
+	background: linear-gradient(#00E2E6, #00C1C8);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#volunteerbutton:hover{
+	background: none;
+	border: 2px solid #00C1C8;
+	color: #00C1C8;
+}
+#sponsorbutton{
+	background: linear-gradient(#FFD900, #FFB100);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#sponsorbutton:hover{
+	background: none;
+	border: 2px solid #FFB100;
+	color: #FFB100;
+}
+.click{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding-top: 20px;
+	box-sizing: border-box;
+}
 section.contact{
 	height: 300px;
 	display: flex;
@@ -546,7 +623,6 @@ section.contact{
 	.logowrapper{
 		width: 70%;
 	}
-
 	section.taglinebanner{
 		flex-direction: column;
 		align-items: center;
@@ -580,7 +656,12 @@ section.contact{
 		justify-content: space-around;
 		height: 100%;
 	}
-
+	.click img{
+	width: 100%;
+	}
+	section.volunteersection{
+		padding: 0;
+	}
 	.getintouch{
 	flex-direction: column;
 	text-align: center;
@@ -590,8 +671,6 @@ section.contact{
 		font-size: 40px;
 		margin-bottom: 10px;
 	}
-
-
 
 
 }/*media query 700px*/
