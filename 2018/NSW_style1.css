@@ -169,11 +169,16 @@ section.descriptionsection{
 	height: 650px;
 	background-color: #00FFDD;
 	display: flex;
+	align-content: center;
+	justify-content: center;
 
 }
 .description1{
 	width: 50%;
 	display: flex;
+	box-sizing: border-box;
+	padding-left: 30px;
+	padding-top: 30px;
 }
 #NSWlogogrey{
 	display: block;
@@ -182,12 +187,14 @@ section.descriptionsection{
 }
 .description2{
 	width: 50%;
-}
-#handphone{
-	margin-left: 30px;
-	margin-top: 30px;
+	display: flex;
+	box-sizing: border-box;
+	align-items:  center;
+	padding-right: 40px;
+
 }
 .descriptiontext{
+	box-sizing: border-box;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -200,9 +207,6 @@ section.descriptionsection{
 .descriptionphotos{
 	display: flex;
 	flex-direction: column;
-	padding-top: 50px;
-	padding-right: 60px;
-	max-width: 660px;
 }
 .bottomphoto{
 	display: flex;
@@ -210,13 +214,15 @@ section.descriptionsection{
 .descriptionphotos img{
 	width: 100%;
 	height: auto;
+	display: block;
+	box-sizing: border-box;
 }
 .bp1{
 	padding-right: 10px;
 
 }
 .topphoto{
-	margin-bottom: 6px;
+	padding-bottom: 6px;
 }
 
 section.speakerssection{
@@ -268,20 +274,23 @@ section.leadeventsection{
 	height: 100%;
 }
 .leadimg1{
-	justify-content:flex-end;
-	align-items: baseline;
-	flex-direction: column;
+	align-content: flex-end;
+
 }
 .leadimg1 img{
-	width: 100%;
+	max-height: 490px;
+	max-width: 100%;
+	align-self: flex-end;
+	
 }
 .leadimg2{
 	justify-content: flex-end;
-	align-content: baseline;
-	flex-direction: column;
+
 }
 .leadimg2 img{
-	width: 100%;
+	max-height: 490px;
+	max-width: 100%;
+	align-self: flex-end;
 }
 
 .leadcontent{
@@ -320,6 +329,83 @@ section.leadeventsection{
 	background-color: white;
 	color: #EA6825;
 
+}
+section.volunteersection{
+	height: 600px;
+	background-image: url(img/networking.svg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 60px;
+	box-sizing: border-box;
+}
+.v, .p{
+	display: flex;
+	align-content: center;
+	flex-direction: column;
+	text-align: center;
+	width: 80%
+}
+.v h1{
+	font-size: 50px;
+    color: #00C1C8;
+    margin: 10px;
+}
+.v h2, .p h2{
+	color: #939393;
+	font-weight: lighter;	
+	padding-bottom: 20px;
+}
+.p h1{
+	font-size: 50px;
+    color: #FF7000;
+    margin: 10px;
+}
+#volunteerbutton{
+	background: linear-gradient(#00E2E6, #00C1C8);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#volunteerbutton:hover{
+	background: none;
+	border: 2px solid #00C1C8;
+	color: #00C1C8;
+}
+#sponsorbutton{
+	background: linear-gradient(#FFD900, #FFB100);
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+}
+#sponsorbutton:hover{
+	background: none;
+	border: 2px solid #FFB100;
+	color: #FFB100;
+}
+.click{
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: auto;
+	padding-top: 20px;
+	box-sizing: border-box;
 }
 section.contact{
 	height: 300px;
@@ -470,6 +556,43 @@ section.contact{
 		top: 30px;
 		padding: 10px;
 	}
+	section.descriptionsection{
+		flex-direction: column;
+		height: auto;
+		align-items: center;
+		justify-content: center;
+	}
+	#handphone{
+		display: none;
+	}
+	.description1, .description2{
+		width: 100%;
+		justify-content: center;
+		padding: 0;
+	}
+	.descriptiontext{
+		width: 80%;
+		height: 600px;
+		padding: 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		align-content: center;
+	}
+	#NSWlogogrey{
+		width: 90%;
+	}
+	.descriptionphotos{
+		padding: 0;
+		width: 90%;
+		padding-bottom: 40px;
+	}
+	.bottomphoto{
+		flex-direction: column;
+	}
+	.bp1{
+		padding-right: 0;
+		padding-bottom: 6px;
+	}
 
 	section.leadeventsection {
 		height: 1000px;
@@ -490,7 +613,7 @@ section.contact{
 	}
 	.leadimg2 img{
 		width: auto;
-		max-height: 100%;
+		max-height: 470px;
 	}
 	
 }
@@ -500,7 +623,6 @@ section.contact{
 	.logowrapper{
 		width: 70%;
 	}
-
 	section.taglinebanner{
 		flex-direction: column;
 		align-items: center;
@@ -523,38 +645,6 @@ section.contact{
 	.taglinecontent{
 		width: 80%;
 	}
-	section.descriptionsection{
-		flex-direction: column;
-		height: 1300px;
-		align-items: center;
-		padding-top: 40px;
-	}
-	#handphone{
-		display: none;
-	}
-	.description1, .description2{
-		width: 100%;
-		justify-content: center;
-		height: 1100px;
-	}
-	.descriptiontext{
-		width: 80%;
-		height: 500px;
-		padding: 0;
-	}
-	#NSWlogogrey{
-		width: 100%;
-	}
-	.descriptionphotos{
-		padding: 0;
-	}
-	.bottomphoto{
-		flex-direction: column;
-	}
-	.bp1{
-		padding-right: 0;
-		padding-bottom: 6px;
-	}
 
 	section.speakerssection{
 		height: 1500px;
@@ -566,7 +656,12 @@ section.contact{
 		justify-content: space-around;
 		height: 100%;
 	}
-
+	.click img{
+	width: 100%;
+	}
+	section.volunteersection{
+		padding: 0;
+	}
 	.getintouch{
 	flex-direction: column;
 	text-align: center;
@@ -576,8 +671,6 @@ section.contact{
 		font-size: 40px;
 		margin-bottom: 10px;
 	}
-
-
 
 
 }/*media query 700px*/
