@@ -670,6 +670,9 @@ section.contact{
 		margin-right: 0;
 		font-size: 40px;
 		margin-bottom: 10px;
+	}	
+	.speakerssection h1, .leadcontent h1, .v h1, .p h1 {
+	font-size: 40px;
 	}
 
 
