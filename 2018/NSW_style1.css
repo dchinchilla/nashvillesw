@@ -189,10 +189,13 @@ img.animated-tagline {
 .form_wrapper input{
 	border: none;
 	border-radius: 9px;
+	padding-top:10px;
+	padding-bottom: 10px;
 	background-color: #EFEFEF;
 	outline: none;
 	width: 97%;
 	padding-left: 10px;
+	font-size: 12px;
 }
 .form_wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
  	font-size: 16px;
