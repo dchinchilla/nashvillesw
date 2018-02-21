@@ -30,7 +30,7 @@ body{
 
 header{
 	width: 100%;
-	height: 100px;
+	height: 120px;
 	display: flex;
 	flex-direction: row-reverse;
 	align-content: baseline;
@@ -42,6 +42,7 @@ header{
 .logowrapper{
 	box-sizing: border-box;
 	width: 30%;
+	height: auto;
 	padding: 30px;
 
 }
@@ -57,8 +58,6 @@ header{
 .navigationwrapper{
 	display: flex;
 	align-items: flex-end;
-
-
 
 }
 
@@ -150,6 +149,7 @@ section.taglinebanner {
 	}
 .form_wrapper{
 	margin: 30px 0px 30px 0px;
+	width: 100%;
 }
 
 .taglineimg2{
@@ -163,6 +163,81 @@ img.animated-tagline {
     display: block;
     max-width: 100%;
     height: auto;
+}
+
+#mc_embed_signup{
+	background-color: #EFEFEF;
+	width: 100%;
+	font-size: 16px;
+	border-radius: 9px;
+	min-width: 288px;
+
+}
+
+.flexwrap{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 45px;
+	width: 100%
+}
+.flex-1{
+	width: 45%;
+}
+
+
+.form_wrapper input{
+	border: none;
+	border-radius: 9px;
+	padding-top:10px;
+	padding-bottom: 10px;
+	background-color: #EFEFEF;
+	outline: none;
+	width: 97%;
+	padding-left: 10px;
+}
+.form_wrapper input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+ 	font-size: 16px;
+ 	text-align: left;
+ 	outline: none;
+}
+.form_wrapper input::-moz-placeholder { /* Firefox 19+ */
+	font-size: 16px;
+ 	text-align: left;
+ 	outline: none;
+}
+.form_wrapper input::-ms-input-placeholder { /* IE 10+ */
+	font-size: 16px;
+ 	text-align: left;
+ 	outline: none;
+}
+.form_wrapper input::-moz-placeholder { /* Firefox 18- */
+	font-size: 16px;
+ 	text-align: left;
+ 	outline: none;
+}
+
+.form_wrapper label{
+	display: none;
+}
+.form_wrapper .button{
+	background: linear-gradient(#FFA900, #FF7000);
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    margin-right: 4px;
+    cursor: pointer;
+}
+.form_wrapper .button:hover{
+	background: none;
+	border: 2px solid #FFA900;
+	color: #FFA900;
 }
 
 section.descriptionsection{
@@ -250,6 +325,7 @@ section.speakerssection{
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+
 }
 .speaker{
 	margin: 10px;
@@ -512,7 +588,7 @@ section.contact{
 		/* position: absolute; */
 		position: absolute;
 		right: 40px;
-		top: 40px;
+		top: 50px;
 	}
 	
 	.navigationwrapper {display: none;}
@@ -544,9 +620,9 @@ section.contact{
 	}
 
 	.navigation li a:hover {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
+	    color: white;
+	    text-decoration: none;
+	    font-weight: bold;
 	}
 
 	#x{
@@ -555,6 +631,10 @@ section.contact{
 		right: 30px;
 		top: 30px;
 		padding: 10px;
+	}
+
+	.form_wrapper .button{
+		font-size: 12px;
 	}
 	section.descriptionsection{
 		flex-direction: column;
@@ -677,3 +757,11 @@ section.contact{
 
 
 }/*media query 700px*/
+
+@media (max-width: 330px) {
+	.form_wrapper .button{
+		font-size: 10px;
+	}	
+
+
+}/*media query 330px*/
