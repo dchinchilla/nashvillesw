@@ -571,6 +571,9 @@ section.contact{
 .acklentagline{
 	font-family: 'Montserrat', sans-serif;
 }
+footer a{
+	text-decoration: none;
+}
 
 @media (max-width: 1000px) {
 
