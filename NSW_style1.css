@@ -391,20 +391,21 @@ section.leadeventsection{
 	color: white;
 }
 .leadcontent a{
-	background-color: #00FFDD;
-    color: #00868B;
+	background: linear-gradient(#00E2E6, #00C1C8);
+    color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    font-weight: 500;
     border-radius: 4px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 .leadcontent a:hover{
-	background-color: white;
-	color: #EA6825;
+	background: none;
+	border: 2px solid white;
+	color: white;
 
 }
 section.volunteersection{
@@ -528,21 +529,21 @@ section.contact{
 	font-weight: bold;
 }
 .getintouch a{
-	background-color: #00C1C8;
-    border: 2px solid white;
+	background: linear-gradient(#FFD900, #FFB100);
     color: white;
     padding: 10px 32px;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
     font-size: 16px;
+    font-weight: 500;
     border-radius: 4px;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
 .getintouch a:hover{
-	background-color: white;
-	color: #00C1C8;
+	background: none;
+	border: 2px solid white;
+	color: white;
 }
 
 .copybox{
@@ -711,6 +712,9 @@ footer a{
 		flex-direction: column;
 		align-items: center;
 		height: auto;
+	}
+	.form_wrapper input{
+		font-size: 14px;
 	}
 
 	.taglineimg1{
