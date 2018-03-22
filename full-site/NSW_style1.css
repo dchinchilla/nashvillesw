@@ -579,6 +579,7 @@ section.contact{
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		transition: 0.5s;
 	}
 .acklenfooter img, .acklenfooter p{
 	display: block;
@@ -590,6 +591,9 @@ section.contact{
 	width: 40px;
 	margin: 20px;
 }
+#acklenlogotype{
+	width: 210px;
+}
 
 footer a{
 	text-decoration: none;
@@ -597,6 +601,25 @@ footer a{
 .acklenfooter:hover{
 	background-color: #625D70;
 }
+
+.agendabanner{
+	height: 300px;
+	background-color: #FFB100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+.agendabanner h1{
+	font-size: 50px;
+	color: #EA6825;
+}
+.agendabanner h2{
+	font-weight: lighter;
+	color: white;
+}
+.
 
 @media (max-width: 1000px) {
 
