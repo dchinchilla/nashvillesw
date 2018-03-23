@@ -568,58 +568,27 @@ section.contact{
 	color: white;
 	font-weight:lighter;
 	font-size: 15px;
-	display: flex;
-	align-items: center;
 }
 
 .acklenfooter{
-		background-color: #00C1C8;
-		height: 120px;
+		background-color: #555160;
+		height: 300px;
 		color:white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		transition: 0.5s;
+		flex-direction: column;
 	}
 .acklenfooter img, .acklenfooter p{
 	display: block;
-	margin: 5px;
-	font-size: 18px;
-	font-weight: lighter;
-}
-#acklenheart{
-	width: 40px;
 	margin: 20px;
 }
-#acklenlogotype{
-	width: 210px;
+.acklentagline{
+	font-family: 'Montserrat', sans-serif;
 }
-
 footer a{
 	text-decoration: none;
 }
-.acklenfooter:hover{
-	background-color: #625D70;
-}
-
-.agendabanner{
-	height: 300px;
-	background-color: #FFB100;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	flex-direction: column;
-	text-align: center;
-}
-.agendabanner h1{
-	font-size: 50px;
-	color: #EA6825;
-}
-.agendabanner h2{
-	font-weight: lighter;
-	color: white;
-}
-.
 
 @media (max-width: 1000px) {
 
@@ -744,10 +713,6 @@ footer a{
 	.leadimg2 img{
 		width: auto;
 		max-height: 470px;
-	}
-	.acklenfooter{
-		flex-direction: column;
-		padding: 35px;
 	}
 	
 }
