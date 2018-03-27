@@ -13,13 +13,10 @@ table, caption, tbody, tfoot, thead, tr, th, td {
     font-family: inherit;
     vertical-align: baseline;
 }
-
-html,body {
+html,body{
     box-sizing: border-box;
     height: 100%;
-
 }
-
 body{
 	font-family: 'Rubik', sans-serif;
 	-webkit-font-smoothing: antialiased;
@@ -27,7 +24,6 @@ body{
 .container{
 	box-sizing: border-box;
 }
-
 header{
 	width: 100%;
 	height: 120px;
@@ -36,15 +32,12 @@ header{
 	align-content: baseline;
 	justify-content: space-between;
 	margin-bottom: 20px;
-
 }
-
 .logowrapper{
 	box-sizing: border-box;
 	width: 30%;
 	height: auto;
 	padding: 30px;
-
 }
 #NSWlogo{
 	display: block;
@@ -52,25 +45,19 @@ header{
 	height: auto;
 	max-width: 300px;
 }
-
 #hamburger{
 	display: none;
 }
 .navigationwrapper{
 	display: flex;
 	align-items: flex-end;
-
 }
-
 .navigation{
 	width: 100%;
 	display: flex;
 	align-content: flex-end;
 	justify-content: flex-end;
-
-
 }
-
 .navigation ul {
     list-style-type: none;
     margin: 0;
@@ -78,18 +65,13 @@ header{
     overflow: hidden;
     display: flex;
 }
-
-.navigation li {
-
-}
-
 .navigation li a {
     display: block;
     text-align: center;
     padding: 14px 30px;
     text-decoration: none;
     color: #939393;
-    font-weight: 500;
+    font-weight: 700;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
 }
@@ -101,7 +83,6 @@ header{
 #x{
 	display: none;
 }
-
 section.taglinebanner {
     /*background-color: #c1edff;*/
     height: 600px;
@@ -109,21 +90,17 @@ section.taglinebanner {
     justify-content: space-between;
     /* align-items: center; */
 }
-
 .taglineimg1 img, .taglineimg2 img {
     display:  block;
     width:  100%;
     height:  auto;
 }
-
 .taglineimg1{
 	/*background-color: gray;*/
 	width: 30%;
 	display: flex;
 	align-items: center;
-
 }
-
 .taglinecontent{
 	/*background-color: blue;*/
 	width: 40%;
@@ -133,21 +110,17 @@ section.taglinebanner {
 	display: flex;
 	margin: 30px;
 }
-
 .clockblue {
 	display: block;
 	margin: 30px;
-
 }
 .bulb {
 	display:block;
 	margin-top: 50px;
-
 }
-.taglineimg2 img
-	{
-		max-height: 580px;
-	}
+.taglineimg2 img{
+	max-height: 580px;
+}
 .form_wrapper{
 	margin: 30px 0px 30px 0px;
 	width: 100%;
@@ -169,7 +142,6 @@ section.taglinebanner {
 	background: none;
 	border: 2px solid #FF7000;
 	color: #FF7000;
-
 }
 .taglineimg2{
 	/*background-color: pink;*/
@@ -177,20 +149,17 @@ section.taglinebanner {
 	display: flex;
 	align-items: flex-end;
 }
-
 img.animated-tagline {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
 section.descriptionsection{
 	height: 650px;
 	background-color: #00FFDD;
 	display: flex;
 	align-content: center;
 	justify-content: center;
-
 }
 .description1{
 	width: 50%;
@@ -210,7 +179,6 @@ section.descriptionsection{
 	box-sizing: border-box;
 	align-items:  center;
 	padding-right: 40px;
-
 }
 .descriptiontext{
 	box-sizing: border-box;
@@ -238,12 +206,10 @@ section.descriptionsection{
 }
 .bp1{
 	padding-right: 10px;
-
 }
 .topphoto{
 	padding-bottom: 6px;
 }
-
 section.speakerssection{
 	padding: 60px 30px 80px 30px;
 	text-align: center;
@@ -262,14 +228,12 @@ section.speakerssection{
 	margin-bottom: 5px;
 	font-weight: lighter;
 }
-
 .speakerscontainer{
 	display: flex;
 	flex-wrap: wrap;
 	flex: 1 1 33.33%;
 	align-items: center;
 	justify-content: space-around;
-
 }
 .speaker{
 	margin: 20px 1.5%;
@@ -278,7 +242,6 @@ section.speakerssection{
 .speaker:nth-child(odd) .speakerphoto::before{
 	background-image: url(img/sefront-2.svg);
 }
-
 .speaker img{
 	display: block;
 	width: 100%;
@@ -292,7 +255,6 @@ section.speakerssection{
 	max-height: 300px;
 	margin: 0 auto;
 }
-
 .speakerphoto::before{
 	content: "";
 	display: block;
@@ -320,7 +282,6 @@ section.speakerssection{
 	width: 100%;
 	height:100%;
 	z-index: 1;
-
 }
 .speakerphoto img{
 	width: 95%;
@@ -340,7 +301,6 @@ section.speakerssection{
 .spearker:hover > .speakerphoto::before{
 	top:40px;
 }
-
 section.leadeventsection{
 	height: 550px;
 	background-color: #FFB100;
@@ -355,24 +315,20 @@ section.leadeventsection{
 }
 .leadimg1{
 	align-content: flex-end;
-
 }
 .leadimg1 img{
 	max-height: 490px;
 	max-width: 100%;
 	align-self: flex-end;
-
 }
 .leadimg2{
 	justify-content: flex-end;
-
 }
 .leadimg2 img{
 	max-height: 490px;
 	max-width: 100%;
 	align-self: flex-end;
 }
-
 .leadcontent{
 	width: 40%;
 	height: 100%;
@@ -409,7 +365,6 @@ section.leadeventsection{
 	background: none;
 	border: 2px solid white;
 	color: white;
-
 }
 section.volunteersection{
 	height: 600px;
@@ -462,7 +417,6 @@ section.volunteersection{
 	border: 2px solid #00C1C8;
 	color: #00C1C8;
 }
-
 .sponsorssection h1{
 	font-size: 50px;
     text-align: center;
@@ -490,7 +444,6 @@ section.volunteersection{
   -webkit-filter: grayscale(0);
   filter: none;
 }
-
 .click{
 	width: 100%;
 	display: flex;
@@ -531,13 +484,11 @@ section.contact{
 	color: white;
 	text-decoration:underline;
 }
-
 .getintouch{
 	align-items: center;
 	justify-content: center;
 	display: flex;
 }
-
 .getintouch span{
 	font-size: 50px;
 	margin-right: 20px;
@@ -560,7 +511,6 @@ section.contact{
 	border: 2px solid white;
 	color: white;
 }
-
 .copybox{
 	background-color: #00C1C8;
 	height: 50px;
@@ -572,16 +522,15 @@ section.contact{
 	display: flex;
 	align-items: center;
 }
-
 .acklenfooter{
-		background-color: #00C1C8;
-		height: 120px;
-		color:white;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		transition: 0.5s;
-	}
+	background-color: #00C1C8;
+	height: 120px;
+	color:white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.5s;
+}
 .acklenfooter img, .acklenfooter p{
 	display: block;
 	margin: 5px;
@@ -595,14 +544,12 @@ section.contact{
 #acklenlogotype{
 	width: 200px;
 }
-
 footer a{
 	text-decoration: none;
 }
 .acklenfooter:hover{
 	background-color: #625D70;
 }
-
 .agendabanner{
 	height: 300px;
 	background-color: #FFB100;
@@ -617,12 +564,10 @@ footer a{
 	display: flex;
 	flex-direction: column;
 }
-
 .agendabanner img{
 	height: 90%;
 	margin-top: auto;
 }
-
 .agendabanner h1{
 	font-size: 50px;
 	color: #EA6825;
@@ -658,10 +603,7 @@ footer a{
 	display: flex;
 	flex-direction: column;
 }
-
-
 @media (max-width: 1000px) {
-
 	header{
 		flex-direction: column;
 		box-sizing: border-box;
@@ -669,19 +611,15 @@ footer a{
 	.logowrapper{
 		width: 40%;
 	}
-
 	#hamburger{
 		display: block;
-		/* margin-top: 40px; */
-		/* right: 40px; */
-		/* position: absolute; */
 		position: absolute;
 		right: 40px;
 		top: 50px;
 	}
-
-	.navigationwrapper {display: none;}
-
+	.navigationwrapper {
+		display: none;
+	}
 	.navigation{
 		position: absolute;
 		background-color: rgba(0, 255, 221, 0.95);
@@ -698,22 +636,18 @@ footer a{
 		align-items: center;
 		justify-content: center;
 		flex-direction: column;
-
 	}
-
 	.navigation li a {
 		color: #414042;
 		font-size: 22px;
 		padding: 24px;
 		font-weight: lighter;
 	}
-
 	.navigation li a:hover {
 	    color: white;
 	    text-decoration: none;
 	    font-weight: bold;
 	}
-
 	#x{
 		display: block;
 		position: absolute;
@@ -721,7 +655,6 @@ footer a{
 		top: 30px;
 		padding: 10px;
 	}
-
 	.form_wrapper .button{
 		font-size: 12px;
 	}
@@ -762,7 +695,6 @@ footer a{
 		padding-right: 0;
 		padding-bottom: 6px;
 	}
-
 	section.leadeventsection {
 		height: 1000px;
 		flex-direction: column;
@@ -795,11 +727,8 @@ footer a{
 	#emptybox{
 		display: none;
 	}
-
 }
-
 @media (max-width: 700px) {
-
 	.logowrapper{
 		width: 70%;
 	}
@@ -811,10 +740,8 @@ footer a{
 	.form_wrapper input{
 		font-size: 14px;
 	}
-
 	.taglineimg1{
 		display: none;
-
 	}
 	.taglineimg2{
 		width: 100%;
@@ -828,7 +755,6 @@ footer a{
 	.taglinecontent{
 		width: 80%;
 	}
-
 	section.speakerssection{
 		justify-content: space-around;
 		padding: 10px;
@@ -865,14 +791,9 @@ footer a{
 	#emptybox2{
 		display: none;
 	}
-
-
 }/*media query 700px*/
-
 @media (max-width: 330px) {
 	.form_wrapper .button{
 		font-size: 10px;
 	}
-
-
 }/*media query 330px*/

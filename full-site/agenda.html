@@ -19,96 +19,71 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
   </head>
-
   <body>
-<div class="container">
-
-    <header>
-      <div class="navigationwrapper">
-      <div class="navigation">
-        <nav>
-                <ul>
-                    <li><a href="index.html">Main</a>
-                    </li>
-                    <li><a href="agenda.html">Agenda</a>
-                    </li>
-                    <li><a href="blog.html">Blog</a>
-                    </li>
-                </ul>
-        </nav>
-        <img id="x" src="img/x.svg">
-      </div>
-      </div>
-      <div class="logowrapper">
-      <img id="NSWlogo" src="img/NSWlogo.svg">
-      <img id="hamburger" src="img/hamburguer.svg">
-      </div>
-
-
-    </header>
-
-    <main>
-      <section class="agendabanner">
-        <div>
-          <img src="img/agendahand.svg">
-        </div>
-        <div>
-        <h1>AGENDA</h1>
-        <h2>BOOKMARK YOUR FAVORITES <br> AND SYNC THEM TO YOUR CALENDAR</h2>
-        </div>
-        <div id="emptybox">
-        </div>
-      </section>
-
-      <section id="contactid" class="contact">
-        <div class="contactcontent">
-          <div class="getintouch">
-          <span>GET IN TOUCH</span>
-              <a target="_blank" href="https://nashstartupweek.typeform.com/to/cfrJGM">Contact us here</a>
+    <div class="container">
+      <header>
+        <div class="navigationwrapper">
+          <div class="navigation">
+            <nav>
+              <ul>
+                <li><a href="index.html">Main</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="blog.html">Blog</a></li>
+              </ul>
+            </nav>
+            <img id="x" src="img/x.svg">
           </div>
-          <p id="mediainquiries">For Media Inquiries, please <a href="mailto:grow@nashvillestartupweek.com">reach out to us.</a></p>
         </div>
-      </section><!--Contact-->
-
-    </main>
-
+        <div class="logowrapper">
+          <img id="NSWlogo" src="img/NSWlogo.svg">
+          <img id="hamburger" src="img/hamburguer.svg">
+        </div>
+      </header>
+      <main>
+        <section class="agendabanner">
+          <div>
+            <img src="img/agendahand.svg">
+          </div>
+          <div>
+            <h1>AGENDA</h1>
+            <h2>BOOKMARK YOUR FAVORITES <br> AND SYNC THEM TO YOUR CALENDAR</h2>
+          </div>
+          <div id="emptybox">
+          </div>
+        </section>
+        <section id="contactid" class="contact">
+          <div class="contactcontent">
+            <div class="getintouch">
+              <span>GET IN TOUCH</span>
+              <a target="_blank" href="https://nashstartupweek.typeform.com/to/cfrJGM">Contact us here</a>
+            </div>
+            <p id="mediainquiries">For Media Inquiries, please <a href="mailto:grow@nashvillestartupweek.com">reach out to us.</a></p>
+          </div>
+        </section><!--Contact-->
+      </main>
     <footer>
-     <a target="_blank" href="https://acklenavenue.com/">
-      <div class="acklenfooter">
-        <img id="acklenheart" src="img/acklenheart.svg">
-        <p class="acklentagline">Developed <small>with stress-free wizardry</small> by</p>
-        <img id="acklenlogotype" src="img/acklenlogo.svg">
-      </div>
+      <a target="_blank" href="https://acklenavenue.com/">
+        <div class="acklenfooter">
+          <img id="acklenheart" src="img/acklenheart.svg">
+          <p class="acklentagline">Developed <small>with stress-free wizardry</small> by</p>
+          <img id="acklenlogotype" src="img/acklenlogo.svg">
+        </div>
       </a>
       <div class="copybox">
-          <p class="copy">© 2018 Startup Week Nashville</p>
+        <p class="copy">© 2018 Startup Week Nashville</p>
       </div>
     </footer>
-</div>
-  </body>
-
+  </div>
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <script type="text/javascript">
-
   jQuery(document).ready(function(){
-
   jQuery('#hamburger').click(function(){
   jQuery('.navigationwrapper').fadeToggle();
   });
-
   jQuery('#x').click(function(){
   jQuery('.navigationwrapper').fadeToggle();
   });
-
-
-
   });
-
   </script>
-
-
-
-
-
-  </html>
+</html>
